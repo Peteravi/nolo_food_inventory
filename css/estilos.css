@@ -1,0 +1,257 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.simple-header {
+    background-color: #14532d;
+    /* Verde oscuro profundo */
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.simple-header .bi-shop-window {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.simple-header h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.simple-header .lead {
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Contenido principal */
+.container {
+    max-width: 1200px;
+}
+
+/* Tarjeta principal */
+.welcome-card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.welcome-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.welcome-card .card-header {
+    background-color: #28a745;
+    color: white;
+    padding: 1.5rem;
+    border-bottom: none;
+}
+
+.welcome-card .card-header h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.welcome-card .card-body {
+    padding: 2rem;
+}
+
+/* Lista de módulos */
+.module-list {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.module-list .list-group-item {
+    border: none;
+    border-left: 4px solid #28a745;
+    margin-bottom: 0.5rem;
+    padding: 1.25rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.module-list .list-group-item:hover {
+    transform: translateX(5px);
+    background-color: #f8f9fa;
+}
+
+.module-list .bi {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+    color: #28a745;
+}
+
+.module-list small {
+    display: block;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+.module-list .bi-chevron-right {
+    font-size: 1rem;
+}
+
+/* Alertas */
+.tip-alert {
+    border-left: 4px solid #28a745;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+}
+
+.tip-alert .bi-lightbulb {
+    font-size: 1.75rem;
+    color: #ffc107;
+    margin-right: 1rem;
+}
+
+.tip-alert h5 {
+    color: #28a745;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #343a40;
+    color: white;
+    /* texto blanco */
+    padding: 3rem 0 1.5rem;
+    margin-top: 3rem;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    /* texto blanco */
+}
+
+.footer-logo .bi-shop-window {
+    color: #28a745;
+    margin-right: 0.5rem;
+}
+
+.footer-contact .bi {
+    color: #28a745;
+    margin-right: 0.5rem;
+}
+
+/* Cambiar enlaces para que tengan texto blanco */
+.footer-links a {
+    color: white;
+    /* texto blanco */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #28a745;
+    /* opcional: color verde al hover */
+}
+
+.footer-links .bi-chevron-right {
+    color: #28a745;
+    margin-right: 0.5rem;
+}
+
+/* Cambiar color del divisor */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+/* Texto inferior en blanco */
+.footer-bottom {
+    font-size: 0.875rem;
+    color: white;
+}
+
+/* Animaciones */
+.animate-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-modules li {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.animate-modules li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.animate-modules li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.animate-modules li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.animate-tip {
+    animation: fadeIn 0.5s ease-in-out 0.5s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .simple-header {
+        padding: 2rem 0;
+    }
+
+    .simple-header h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-card .card-body {
+        padding: 1.5rem;
+    }
+
+    .module-list .list-group-item {
+        padding: 1rem;
+    }
+
+    .main-footer {
+        text-align: center;
+    }
+
+    .footer-contact,
+    .footer-links {
+        margin-bottom: 2rem;
+    }
+}
